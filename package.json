@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/BernardoMallet/AniversarioBernardoMallet#readme",
   "devDependencies": {
+    "cssnano": "^4.1.11",
     "parcel": "^2.8.3",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.59.3"

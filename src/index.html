@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
@@ -16,10 +17,77 @@
     <header class="hero">
         <div class="container hero__container">
             <img src="images/foto_bernardo.png" alt="" srcset="" class="hero__img">
-            <p class="hero__text">
-                O aniversário do Bernardo Mallet começa em 11m 10d 12h 20m 15s
+            <p class="hero__text" id="hero-text">
+                O aniversário do Bernardo Mallet começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Mundo da Bola - Centenário - Duque de Caxias/RJ
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        GRÁTIS 
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        28/02/2024 às 13h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
-<script src="scripts/main.js"></script>
+    <section class="atracao atracao--churrasco">
+        <div class="container" data-aos="fade-right">
+            <div class="atracao__details">
+                <h2 class="atracao__details__title">Churrasco</h2>
+                <p class="atracao__details_description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed labore soluta, iure impedit ut nesciunt temporibus. Fugit, expedita? Explicabo dolores nulla soluta distinctio ratione labore adipisci harum ex eaque nostrum!
+                </p>
+            </div>
+            <img src="images/foto_churrasco.jpg" alt="Churrasco" class="atracao__image">
+        </div>
+    </section>
+    <section class="atracao atracao--cerveja atracao--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="atracao__details">
+                <h2 class="atracao__details__title">Cerveja</h2>
+                <p class="atracao__details_description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed labore soluta, iure impedit ut nesciunt temporibus. Fugit, expedita? Explicabo dolores nulla soluta distinctio ratione labore adipisci harum ex eaque nostrum!
+                </p>
+            </div>
+            <img src="images/foto_cerveja.jpg" alt="Cerveja" class="atracao__image">
+        </div>
+    </section>
+    <section class="atracao atracao--rodaDeSamba">
+        <div class="container" data-aos="fade-right">
+            <div class="atracao__details">
+                <h2 class="atracao__details__title">Roda de Samba</h2>
+                <p class="atracao__details_description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed labore soluta, iure impedit ut nesciunt temporibus. Fugit, expedita? Explicabo dolores nulla soluta distinctio ratione labore adipisci harum ex eaque nostrum!
+                </p>
+            </div>
+            <img src="images/foto_rodaDeSamba.jpg" alt="Roda de Samba" class="atracao__image">
+        </div>
+    </section>
+    <section class="atracao atracao--futebol atracao--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="atracao__details">
+                <h2 class="atracao__details__title">Futebol</h2>
+                <p class="atracao__details_description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed labore soluta, iure impedit ut nesciunt temporibus. Fugit, expedita? Explicabo dolores nulla soluta distinctio ratione labore adipisci harum ex eaque nostrum!
+                </p>
+            </div>
+            <img src="images/foto_futebol.jpg" alt="Futebol" class="atracao__image">
+        </div>
+    </section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="scripts/main.js">
+</script>
 </html>
